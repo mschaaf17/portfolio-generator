@@ -124,14 +124,14 @@ promptUser()
 .then(promptProject)
 .then(portfolioData => {
 console.log(portfolioData)})
-//.then(projectData => {
-  //portfolioData.projects.push(projectData);
-// if (projectData.confirmAddProject) {
-//  return promptProject(portfolioData);
-// } else {
-//   return portfolioData;
-// }
-// });
+.then(projectData => {
+portfolioData.projects.push(projectData);
+ if (projectData.confirmAddProject) {
+ return promptProject(portfolioData);
+ } else {
+   return portfolioData;
+ }
+ });
 
 // const fs = require('fs');
 // 
